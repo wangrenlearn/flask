@@ -3,8 +3,7 @@ deleted file mode 100644
 -*.py[cod]
 -
 -# C extensions
--*.so
--
+
 -# Packages
 -*.egg
 -*.egg-info
@@ -23,7 +22,8 @@ deleted file mode 100644
 -
 -# Installer logs
 -pip-log.txt
--
+-*.so
+-*.log
 -# Unit test / coverage reports
 -.coverage
 -.tox
