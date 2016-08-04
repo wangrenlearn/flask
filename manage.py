@@ -17,6 +17,7 @@ manager.add_command("shell", Shell(make_context=make_shell_context))
 manager.add_command('db', MigrateCommand)
 
 @app.cli.command('test')
+@manager.command
 def test():
     """Run the unit tests."""
     import unittest
@@ -24,6 +25,7 @@ def test():
     unittest.TextTestRunner(verbosity=2).run(tests)
 
 @app.cli.command('profile')
+@manager.command
 def profile(length=25, profile_dir=None):
     """Start the application under the code profiler."""
     from werkzeug.contrib.profiler import ProfilerMiddleware
@@ -32,6 +34,7 @@ def profile(length=25, profile_dir=None):
     app.run()
 
 @app.cli.command('deploy')
+@manager.command
 def deploy():
     """Run deployment tasks."""
     from flask_migrate import upgrade
