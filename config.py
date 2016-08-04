@@ -16,8 +16,8 @@ class Config:
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = 'Admin <wren@example.com>'
+    FLASKY_MAIL_SUBJECT_PREFIX = '[wren]'
+    FLASKY_MAIL_SENDER = 'Admin <550375693@qq.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     FLASKY_POST_PER_PAGE = 20
