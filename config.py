@@ -23,7 +23,7 @@ class Config:
     FLASKY_POST_PER_PAGE = 20
     FLASKY_FOLLOWERS_PER_PAGE = 20
     FLASKY_COMMENTS_PER_PAGE = 5
-    SSL_DISABLE = False
+    SSL_DISABLE = True
     @staticmethod
     def init_app(app):
         import logging
